@@ -1,12 +1,7 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.IE;
 using StackOverflowAutoFramework.Base;
-using StackOverflowAutoFramework.Config;
 using StackOverflowAutoFramework.Helpers;
 using StackOverflowTest.Pages;
 
