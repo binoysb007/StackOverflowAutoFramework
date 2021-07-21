@@ -1,10 +1,4 @@
-﻿using StackOverflowAutoFramework.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using StackOverflowAutoFramework.Base;
 namespace StackOverflowAutoFramework.Config
 {
   public  class Settings
