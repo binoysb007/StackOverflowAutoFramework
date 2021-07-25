@@ -1,5 +1,5 @@
-using StackOverflowAutoFramework.Base;
-namespace StackOverflowAutoFramework.Config
+using GenericAutoFramework.Base;
+namespace GenericAutoFramework.Config
 {
   public  class Settings
     {

@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using StackOverflowAutoFramework.Config;
-using StackOverflowAutoFramework.Helpers;
+using GenericAutoFramework.Config;
+using GenericAutoFramework.Helpers;
 
-namespace StackOverflowAutoFramework.Base
+namespace GenericAutoFramework.Base
 {
    public abstract class TestInitializeHook : Base
     {

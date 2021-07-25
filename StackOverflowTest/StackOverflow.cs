@@ -1,8 +1,8 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
-using StackOverflowAutoFramework.Base;
-using StackOverflowAutoFramework.Helpers;
+using GenericAutoFramework.Base;
+using GenericAutoFramework.Helpers;
 using StackOverflowTest.Pages;
 
 namespace StackOverflowTest
@@ -27,8 +27,7 @@ namespace StackOverflowTest
             }
             catch (Exception e)
             {
-               NUnit.Framework.Assert.Fail(Constants.testFailed);
-               Console.WriteLine(e.StackTrace);
+               NUnit.Framework.Assert.Fail(e.Message);
             }
 
             finally
@@ -57,8 +56,7 @@ namespace StackOverflowTest
             }
             catch (Exception e)
             {
-                NUnit.Framework.Assert.Fail(Constants.testFailed);
-                Console.WriteLine(e.StackTrace);
+                NUnit.Framework.Assert.Fail(e.Message);
             }
 
             finally

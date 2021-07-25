@@ -1,12 +1,5 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StackOverflowAutoFramework.Base
+﻿using OpenQA.Selenium.Support.PageObjects;
+namespace GenericAutoFramework.Base
 {
     public abstract class BasePage :Base
     {

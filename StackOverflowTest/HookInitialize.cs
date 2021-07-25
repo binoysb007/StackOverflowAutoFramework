@@ -1,5 +1,4 @@
-﻿
-using StackOverflowAutoFramework.Base;
+﻿using GenericAutoFramework.Base;
 namespace StackOverflowTest
 {
     public class HookInitialize : TestInitializeHook

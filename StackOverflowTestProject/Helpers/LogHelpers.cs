@@ -1,9 +1,9 @@
-﻿using StackOverflowAutoFramework.Config;
+﻿using GenericAutoFramework.Config;
 using System;
 using System.IO;
 
 
-namespace StackOverflowAutoFramework.Helpers
+namespace GenericAutoFramework.Helpers
 {
    public class LogHelpers
     {

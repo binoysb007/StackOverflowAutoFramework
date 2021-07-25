@@ -1,6 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using StackOverflowAutoFramework.Base;
+using GenericAutoFramework.Base;
 using System.Threading;
 
 namespace StackOverflowTest.Pages
@@ -36,7 +36,6 @@ namespace StackOverflowTest.Pages
             rdbtnSortBy.Click();
             selectSearchTextbox.Click();
         }
-
 
         public void SearchText(string searchText)
         {

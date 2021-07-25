@@ -39,8 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GenericAutoFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="GenericAutoFramework">
       <HintPath>..\StackOverflowTestProject\bin\Debug\GenericAutoFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />

@@ -3,7 +3,7 @@ using System.Xml.XPath;
 using System.IO;
 
 
-namespace StackOverflowAutoFramework.Config
+namespace GenericAutoFramework.Config
 {
    public class ConfigReader
     {
