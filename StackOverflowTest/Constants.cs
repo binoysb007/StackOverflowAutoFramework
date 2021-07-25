@@ -15,7 +15,5 @@ namespace StackOverflowTest
         public const String expectedQuestionTitle = "Custom filtered 'javascript' questions - Stack Overflow";
         public const String expectedTagTitle = "Newest 'c#' Questions - Stack Overflow";
         public const String testFailed = "Test Failed";
-        public const String Descriptions = " Test method for navigate to Question menu and apply Javascript filter";
-
     }
 }
