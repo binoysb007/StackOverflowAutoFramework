@@ -99,7 +99,7 @@ namespace StackOverflowTest
             TagSearchPage tagpage = new TagSearchPage();
             tagpage.SearchText(Constants.tagSearchText);
             LogHelpers.WriteLog(Constants.filterTextInserted);
-            tagpage.ClickCSharp();
+            tagpage.ClickLinkText();
             LogHelpers.WriteLog(Constants.linkClicked);
         }
 

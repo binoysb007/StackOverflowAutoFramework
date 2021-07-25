@@ -14,7 +14,7 @@ namespace StackOverflowTest.Pages
         public IWebElement txtSearchTag { get; set; }
 
         [FindsBy(How = How.XPath, Using = "/html/body/div[3]/div[2]/div/div[3]/div[1]/div[1]/div[1]/div/a")]
-        public IWebElement lnkbtnCSharp { get; set; }
+        public IWebElement lnkbtnText { get; set; }
 
 
         public void SearchText(string searchText)
@@ -24,10 +24,10 @@ namespace StackOverflowTest.Pages
             txtSearchTag.SendKeys(searchText);
         }
 
-        public void ClickCSharp()
+        public void ClickLinkText()
         {
             Thread.Sleep(1000);
-            lnkbtnCSharp.Click();
+            lnkbtnText.Click();
 
         }
     }
