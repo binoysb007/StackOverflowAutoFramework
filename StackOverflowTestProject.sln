@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowAutoFramework", "StackOverflowTestProject\StackOverflowAutoFramework.csproj", "{5757FF13-67E6-4F7E-ADFC-5C0104E580DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAutoFramework", "StackOverflowTestProject\GenericAutoFramework.csproj", "{5757FF13-67E6-4F7E-ADFC-5C0104E580DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowTest", "StackOverflowTest\StackOverflowTest.csproj", "{9E84A299-882D-4239-89E4-285570F026BB}"
 EndProject

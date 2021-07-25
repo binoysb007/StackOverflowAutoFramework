@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using StackOverflowAutoFramework.Base;
+using System.Threading;
 
 namespace StackOverflowTest.Pages
 {
@@ -13,7 +14,8 @@ namespace StackOverflowTest.Pages
         public IWebElement lnkMenu { get; set; }
         public void ClickNavigation()
         {
-           lnkMenu.Click();
+            Thread.Sleep(3000);
+            lnkMenu.Click();
            
         }
 

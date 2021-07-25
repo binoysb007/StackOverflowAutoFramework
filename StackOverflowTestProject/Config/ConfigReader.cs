@@ -9,11 +9,11 @@ namespace StackOverflowAutoFramework.Config
     {
         public static void SetFrameworkSettings()
         {
-            XPathItem sit;
-            XPathItem testtype;
-            XPathItem islog;
-            XPathItem isreport;
-            XPathItem buildname;
+            XPathItem stackOverflowUrl;
+            XPathItem testType;
+            XPathItem isLog;
+            XPathItem isReport;
+            XPathItem buildName;
             XPathItem logPath;
 
             string strFilename = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
@@ -22,20 +22,20 @@ namespace StackOverflowAutoFramework.Config
             XPathNavigator navigator = document.CreateNavigator();
 
             //Get XML Details and pass it in XPathItem type variables
-            sit = navigator.SelectSingleNode("StackOverflowAutoFramework/RunSettings/SIT");
-            buildname = navigator.SelectSingleNode("StackOverflowAutoFramework/RunSettings/BuildName");
-            testtype = navigator.SelectSingleNode("StackOverflowAutoFramework/RunSettings/TestType");
-            islog = navigator.SelectSingleNode("StackOverflowAutoFramework/RunSettings/IsLog");
-            isreport = navigator.SelectSingleNode("StackOverflowAutoFramework/RunSettings/IsReport");
-            logPath = navigator.SelectSingleNode("StackOverflowAutoFramework/RunSettings/LogPath");
+            stackOverflowUrl = navigator.SelectSingleNode("GenericAutoFramework/RunSettings/stackOverflowUrl");
+            buildName = navigator.SelectSingleNode("GenericAutoFramework/RunSettings/buildName");
+            testType = navigator.SelectSingleNode("GenericAutoFramework/RunSettings/testType");
+            isLog = navigator.SelectSingleNode("GenericAutoFramework/RunSettings/isLog");
+            isReport = navigator.SelectSingleNode("GenericAutoFramework/RunSettings/isReport");
+            logPath = navigator.SelectSingleNode("GenericAutoFramework/RunSettings/logPath");
 
             //Set XML Details in the property to be used accross framework
-            Settings.SIT = sit.Value.ToString();
-            Settings.BuildName = buildname.Value.ToString();
-            Settings.TestType = testtype.Value.ToString();
-            Settings.IsLog = islog.Value.ToString();
-            Settings.IsReporting = isreport.Value.ToString();
-            Settings.LogPath = logPath.Value.ToString();
+            Settings.stackOverflowUrl = stackOverflowUrl.Value.ToString();
+            Settings.buildName = buildName.Value.ToString();
+            Settings.testType = testType.Value.ToString();
+            Settings.isLog = isLog.Value.ToString();
+            Settings.isReporting = isReport.Value.ToString();
+            Settings.logPath = logPath.Value.ToString();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace StackOverflowAutoFramework.Helpers
         /// </summary>
         public static void CreateLogFile()
         {
-            string directory = Settings.LogPath;
+            string directory = Settings.logPath;
             if (Directory.Exists(directory))
             {
                 _streamWriter = File.AppendText(directory + _logFileName + ".log");

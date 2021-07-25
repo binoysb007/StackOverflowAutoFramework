@@ -3,21 +3,21 @@ namespace StackOverflowAutoFramework.Config
 {
   public  class Settings
     {
-        public static int Timeout { get; set; }
+        public static int timeOut { get; set; }
 
-        public static string IsReporting { get; set; }
+        public static string isReporting { get; set; }
 
-        public static string TestType { get; set; }
+        public static string testType { get; set; }
 
-        public static string SIT { get; set; }
+        public static string stackOverflowUrl { get; set; }
 
-        public static string BuildName { get; set; }
+        public static string buildName { get; set; }
 
-        public static BrowserType BrowserType { get; set; }
+        public static BrowserType browserType { get; set; }
 
-        public static string IsLog { get; set; }
+        public static string isLog { get; set; }
 
-        public static string LogPath { get; set; }
+        public static string logPath { get; set; }
 
     }
 }

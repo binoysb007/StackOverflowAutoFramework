@@ -7,7 +7,7 @@ namespace StackOverflowTest
         public HookInitialize() :base(BrowserType.Chrome)
         {
             InitializeSettings();
-            NaviateSite();
+            LaunchSite();
         }
     }
 }

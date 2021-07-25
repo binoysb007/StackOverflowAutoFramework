@@ -52,9 +52,11 @@ namespace StackOverflowAutoFramework.Base
             }
         }
 
-        public virtual void NaviateSite()
+        public virtual void LaunchSite()
         {
-            DriverContext.Browser.GoToUrl(Settings.SIT);
+            DriverContext.Driver.Manage().Window.Maximize();
+            DriverContext.Browser.GoToUrl(Settings.stackOverflowUrl);
+            
             LogHelpers.WriteLog("Opened the browser !!!");
         }
     }

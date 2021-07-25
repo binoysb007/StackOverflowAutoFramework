@@ -13,29 +13,29 @@ namespace StackOverflowTest
         /// <summary>
         /// Test method for navigate to Question menu and apply "Javascript" filter
         /// </summary>
-        [TestMethod, Category(Constants.FunctionalTesting)]
+        [TestMethod, Category(Constants.functionalTesting)]
         public void TestMethodQuestion()
         {
             try
             {
-                DriverContext.Driver.Manage().Window.Maximize();
                 Navigation();
                 LogHelpers.WriteLog(Constants.initialMessage);
                 Filter();
+                NUnit.Framework.Assert.AreEqual(DriverContext.Driver.Title, Constants.expectedQuestionTitle);
                 DriverContext.Driver.Quit();
                 LogHelpers.WriteLog(Constants.finalMessage);
-
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.StackTrace);
+               NUnit.Framework.Assert.Fail(Constants.testFailed);
+               Console.WriteLine(e.StackTrace);
             }
 
             finally
             {
                 if(DriverContext.Driver!=null)
                 {
-                    DriverContext.Driver.Quit();
+                   DriverContext.Driver.Quit();
                 }
             }
             
@@ -43,20 +43,21 @@ namespace StackOverflowTest
         /// <summary>
         ///  Test method for navigate to Tag menu and apply "C#" filter
         /// </summary>
-        [TestMethod,Category(Constants.FunctionalTesting)]
+        [TestMethod,Category(Constants.functionalTesting)]
         public void TestMethodTag()
         {
             try
             {
-                DriverContext.Driver.Manage().Window.Maximize();
                 Navigation();
                 LogHelpers.WriteLog(Constants.initialMessage);
                 TagName();
+                NUnit.Framework.Assert.AreEqual(DriverContext.Driver.Title, Constants.expectedTagTitle);
                 DriverContext.Driver.Quit();
                 LogHelpers.WriteLog(Constants.finalMessage);
             }
             catch (Exception e)
             {
+                NUnit.Framework.Assert.Fail(Constants.testFailed);
                 Console.WriteLine(e.StackTrace);
             }
 
@@ -89,6 +90,7 @@ namespace StackOverflowTest
             LogHelpers.WriteLog(Constants.filterTextInserted);
             questionpage.ApplyFilter();
             LogHelpers.WriteLog(Constants.applyFilter);
+            
         }
 
         /// <summary>
@@ -98,9 +100,9 @@ namespace StackOverflowTest
         {
             TagSearchPage tagpage = new TagSearchPage();
             tagpage.SearchText(Constants.tagSearchText);
-            LogHelpers.WriteLog(Constants.filterTextCSharp);
+            LogHelpers.WriteLog(Constants.filterTextInserted);
             tagpage.ClickCSharp();
-            LogHelpers.WriteLog(Constants.cSharpLinkClicked);
+            LogHelpers.WriteLog(Constants.linkClicked);
         }
 
     }

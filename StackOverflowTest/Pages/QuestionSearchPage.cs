@@ -28,8 +28,6 @@ namespace StackOverflowTest.Pages
         [FindsBy(How = How.CssSelector, Using = ".d-flex > .s-btn")]
         public IWebElement btnApplyFilter { get; set; }
 
-     
-
         public void ClickFilter()
         {
             navQuestion.Click();
@@ -39,6 +37,7 @@ namespace StackOverflowTest.Pages
             selectSearchTextbox.Click();
         }
 
+
         public void SearchText(string searchText)
         {
             txtSearchTag.SendKeys(searchText);
@@ -46,7 +45,7 @@ namespace StackOverflowTest.Pages
 
         public void ApplyFilter()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
             btnApplyFilter.Submit();
 
         }
